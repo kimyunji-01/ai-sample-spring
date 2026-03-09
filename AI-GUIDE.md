@@ -8,5 +8,6 @@
 
 - `_docs/ai/rule/project-context.md` — 프로젝트 요약본
 
+- `_docs/ai/skill/{스킬명}-skill/skill.md` — 스킬들 (제목, 트리거만 읽기)
 
 ---
