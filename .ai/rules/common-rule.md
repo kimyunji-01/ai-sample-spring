@@ -106,13 +106,8 @@ com.example.demo/
 
 ---
 
-## 설정
+## 단일 진실 원천 (Single Source of Truth)
 
-| 규칙         | 값 / 강제 사항                                       |
-| ------------ | ---------------------------------------------------- |
-| OSIV         | `false` — 절대 활성화하지 않는다                     |
-| Fetch 전략   | 항상 `LAZY` — `EAGER` 금지                           |
-| 배치 사이즈  | `default_batch_fetch_size=10`                         |
-| 인증 방식    | `HttpSession` — 별도 요청 없으면 Spring Security 금지 |
-| DTO 생성     | Service 레이어에서만                                  |
-| Entity 노출  | Controller에 Entity를 절대 전달하지 않는다            |
+- **폴더 구조 우선**: `AI-GUIDE.md`의 테이블 표보다 실제 `.ai/skills` 및 `.ai/rules` 폴더 구조를 최우선 순위로 신뢰한다.
+- **자동 갱신**: 새로운 스킬이나 규칙 폴더가 생성되면, 작업 완료 전 반드시 `AI-GUIDE.md`를 실제 파일명 기준으로 갱신한다.
+- **명명 규칙**: 스킬 폴더명은 곧 스킬의 유일한 식별값이며, `AI-GUIDE.md`의 테이블 내 '이름' 컬럼과 1:1로 일치해야 한다.
