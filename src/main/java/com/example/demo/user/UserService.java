@@ -9,12 +9,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 @Service
 public class UserService {
-
     private final UserRepository userRepository;
 
-    @Transactional
-    public void 회원가입(UserRequest.Join requestDto) {
-        userRepository.save(requestDto.toEntity());
-    }
 
 }

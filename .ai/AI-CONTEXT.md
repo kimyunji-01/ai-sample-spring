@@ -11,6 +11,8 @@ AI 에이전트의 동작 규칙, 스킬, 그리고 프로젝트 컨텍스트를
 | project-context.md | 비즈니스 로직 및 프로젝트 전반의 기술적 배경 |
 
 ## 하위 디렉토리
+- `agents/` - AI 에이전트의 역할 및 동작 지침 정의
+- `hooks/` - 특정 이벤트 발생 시 실행될 스크립트 (로그 기록 등)
 - `rules/` - 공통 코드 컨벤션 및 세부 규칙 (`common-rule.md`)
 - `skills/` - `/deep-interview`, `/deepinit` 등 특수 명령 및 처리 절차 정의
 
